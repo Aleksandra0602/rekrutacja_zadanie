@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 import 'package:zadanie_rek/data/find_number.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -26,7 +28,7 @@ class _ResultScreenState extends State<ResultScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Wynik'),
+        title: Text(AppLocalizations.of(context)!.secondAppBar),
         backgroundColor: const Color.fromRGBO(115, 0, 85, 1),
         centerTitle: true,
       ),

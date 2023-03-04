@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 import 'package:zadanie_rek/UI/result_screen.dart';
 
 class SendButton extends StatelessWidget {
@@ -20,10 +22,10 @@ class SendButton extends StatelessWidget {
         child: Container(
           height: 50,
           color: const Color.fromRGBO(115, 0, 85, 1),
-          child: const Center(
+          child: Center(
             child: Text(
-              "WYSZUKAJ",
-              style: TextStyle(
+              AppLocalizations.of(context)!.buttonText,
+              style: const TextStyle(
                 color: Color.fromRGBO(255, 255, 255, 0.7),
                 fontWeight: FontWeight.bold,
               ),

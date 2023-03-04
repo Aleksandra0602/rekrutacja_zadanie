@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'widgets/send_button.dart';
 
@@ -20,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Podaj liczby'),
+        title: Text(AppLocalizations.of(context)!.firstAppBar),
         backgroundColor: const Color.fromRGBO(115, 0, 85, 1),
         centerTitle: true,
       ),
@@ -69,10 +70,10 @@ class _HomePageState extends State<HomePage> {
         : [];
 
     if (list2.isEmpty) {
-      return 'Lista nie może się kończyć przecinkiem';
+      return AppLocalizations.of(context)!.errorComma;
     }
     if (list2.length < 3) {
-      return 'Musisz podać co najmniej 3 wartości typu int';
+      return AppLocalizations.of(context)!.errorThreeInt;
     }
     for (int i = 0; i < list2.length; i++) {
       if (list2[i] % 2 == 0) {
@@ -82,7 +83,7 @@ class _HomePageState extends State<HomePage> {
       }
     }
     if ((k > j && j > 1) || (k < j && k > 1)) {
-      return 'Należy podać tylko jedną "odstającą" liczbę';
+      return AppLocalizations.of(context)!.errorOutlier;
     } else {
       return null;
     }

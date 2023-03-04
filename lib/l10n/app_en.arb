@@ -1,0 +1,31 @@
+{
+    "firstAppBar": "Enter the numbers",
+    "@firstAppBar": {
+        "description": "The text at the AppBar in the first screen"
+    },
+
+    "secondAppBar": "Result",
+    "@secondAppBar": {
+         "description": "The text at the AppBar in the second screen"
+    },
+
+    "errorComma": "The list cannot end with a comma",
+    "@errorComma": {
+        "description": "The message that appears when the user ends with a comma"
+    },
+
+    "errorThreeInt": "You must provide at least 3 int values",
+    "@errorThreeInt": {
+        "description": "The message which appears when the user entered less than 3 numbers"
+    },
+
+    "errorOutlier": "Only one 'outlier' number should be entered",
+    "@errorOutlier": {
+        "description": "The message that appears when user enetered more than one 'outlier' number" 
+    },
+
+    "buttonText": "SEARCH",
+    "@buttonText":{
+        "description": "Button description"
+    }
+}

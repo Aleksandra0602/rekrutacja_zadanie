@@ -1,0 +1,8 @@
+{
+    "firstAppBar": "Podaj liczby",
+    "secondAppBar": "Wynik",
+    "errorComma": "Lista nie może się kończyć przecinkiem",
+    "errorThreeInt": "Musisz podać co najmniej 3 wartości typu int",
+    "errorOutlier": "Należy podać tylko jedną 'odstającą' liczbę",
+    "buttonText": "WYSZUKAJ"
+}
